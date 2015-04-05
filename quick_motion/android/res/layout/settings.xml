@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="Marker Colour"
+            android:id="@+id/colourText"
+            android:layout_alignParentLeft="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="Background Colour"
+            android:id="@+id/backgroundText"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/colourText" android:layout_marginTop="20dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="40 FPS"
+            android:id="@+id/framerateText"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/backgroundText" android:layout_marginTop="20dp"/>
+    <!--<SeekBar-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/markerColourBar"-->
+            <!--android:max="0xFFFFFF" android:progress="0x0000FF"-->
+            <!--android:indeterminate="false"-->
+            <!--android:layout_toRightOf="@id/backgroundText"-->
+            <!--android:layout_alignTop="@id/colourText"/>-->
+    <!--<SeekBar-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/backgroundColourBar"-->
+            <!--android:max="0xFFFFFF" android:progress="0" android:indeterminate="false"-->
+            <!--android:layout_toRightOf="@id/backgroundText"-->
+            <!--android:layout_alignTop="@id/backgroundText"/>-->
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_alignRight="@+id/framerateBar"
+            android:id="@+id/colourPicker"
+            android:layout_toRightOf="@id/backgroundText"
+            android:layout_alignTop="@id/colourText" android:layout_alignBottom="@+id/colourText">
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_alignRight="@+id/colourPicker"
+            android:id="@+id/backgroundColourPicker"
+            android:layout_toRightOf="@id/backgroundText"
+            android:layout_alignTop="@id/backgroundText" android:layout_alignBottom="@+id/backgroundText">
+    </LinearLayout>
+    <SeekBar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/framerateBar"
+            android:max="100" android:progress="50" android:indeterminate="false"
+            android:layout_toRightOf="@id/framerateText"
+            android:layout_alignTop="@id/framerateText"/>
+</RelativeLayout>

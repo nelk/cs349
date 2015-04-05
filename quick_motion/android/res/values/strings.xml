@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">quickmotion_android</string>
+    <string name="open">Open…</string>
+    <string name="save">Save As…</string>
+    <string name="scale">Scale</string>
+    <string name="rotate">Rotate</string>
+    <string name="lasso">Lasso</string>
+    <string name="marker">Marker</string>
+    <string name="eraser">Eraser</string>
+    <string name="animate">Animate</string>
+    <string name="newAnim">New</string>
+    <string name="k_colour">colour</string>
+    <string name="k_backgroundColour">backgroundColour</string>
+    <string name="k_framerate">framerate</string>
+    <string name="share">Share</string>
+    <string name="getContent">Get Content</string>
+</resources>

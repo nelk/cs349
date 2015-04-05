@@ -1,0 +1,17 @@
+CXX = g++
+CXXFLAGS = -Wall -O -g -MMD -lX11
+OBJS = alien.o explosion.o aabullet.o bullet.o turret.o debris.o entity.o building.o helicopter.o bomb.o game.o
+DEPENDS = ${OBJECTS:.o=.d}
+EXEC = helicopter_game
+
+default: $(EXEC)
+	./$(EXEC)
+
+$(EXEC): $(OBJS)
+	$(CXX) $(OBJS) $(CXXFLAGS) -o $(EXEC)
+
+clean:
+	rm -rf $(EXEC) ${DEPENDS} $(OBJS)
+
+-include ${DEPENDS}
+
