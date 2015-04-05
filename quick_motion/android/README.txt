@@ -11,7 +11,7 @@ This animation tool allows you to easily create complex animations with a few si
 
 Compilation/Running
 -------------------------------------------------------------------------------------------
-To compile and run the application, open the provided Eclipse project and run the application with an Android device connected. You can also just install the pre-build apk.
+To compile and run the application, open the provided Eclipse project and run the application with an Android device connected. You can also use the ant build file. Make sure you run "android project update --path ." first.
 
 Android Version
 ------------------------------------------------------------------------------------------
